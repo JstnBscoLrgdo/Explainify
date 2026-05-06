@@ -1,0 +1,12 @@
+{
+  "name": "Explainify",
+  "description": "Master any topic by explaining it simply. AI-powered learning paths, mastery tracking, and intelligent concept distillation.",
+  "requestFramePermissions": [
+    "microphone"
+  ],
+  "majorCapabilities": [
+    "AI-powered content analysis",
+    "Voice-to-explanation recording",
+    "Mastery progress tracking"
+  ]
+}

@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+
+  --color-primary: #004ac6;
+  --color-primary-container: #2563eb;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #eeefff;
+
+  --color-secondary: #516070;
+  --color-secondary-container: #d5e4f8;
+  --color-on-secondary-container: #576676;
+
+  --color-tertiary: #00569c;
+  --color-tertiary-fixed: #d4e3ff;
+  --color-on-tertiary-fixed-variant: #004883;
+
+  --color-surface: #f7f9fb;
+  --color-surface-container: #eceef0;
+  --color-surface-container-low: #f2f4f6;
+  --color-surface-container-high: #e6e8ea;
+  --color-surface-container-highest: #e0e3e5;
+  --color-surface-container-lowest: #ffffff;
+
+  --color-on-surface: #191c1e;
+  --color-on-surface-variant: #434655;
+
+  --color-outline: #737686;
+  --color-outline-variant: #c3c6d7;
+
+  --color-background-app: #f7f9fb;
+
+  --radius-xl: 1.5rem;
+  --radius-lg: 1rem;
+  --radius-md: 0.75rem;
+
+  --spacing-margin-mobile: 20px;
+}
+
+@layer base {
+  body {
+    @apply bg-background-app text-on-surface font-sans;
+  }
+}
+
+.mastery-ring {
+  background: conic-gradient(from 0deg, var(--color-primary-container) 0% 68%, #f1f5f9 68% 100%);
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
