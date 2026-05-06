@@ -26,7 +26,6 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { motion, AnimatePresence } from 'motion/react';
-import { analyzeExplanation, MasteryFeedback } from './services/geminiService.ts';
 import { WEAK_TOPICS, ALL_TOPICS } from './constants.ts';
 
 type Screen = 'home' | 'explore' | 'mastery' | 'profile' | 'explain' | 'upload' | 'analysis' | 'feedback';
